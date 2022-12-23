@@ -117,6 +117,11 @@ body {
 	width: calc(100% - 20px);
 	height: calc(100% - 20px);
 	filter: grayscale(1);
+	transition: 1.5s;
+}
+
+.card .imgbx img:hover {
+	filter: none;
 }
 
 .card .content {
