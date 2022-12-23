@@ -139,15 +139,26 @@ body {
 	text-align: center;
 	width: 100%;
 	transition: 0.5s;
+	transition-delay: 0.3s;
 	transform: translateY(145px);
 }
 
 .card:hover .content .details {
+	transition-timing-function: ease-in-out;
 	transform: translateY(0px);
+	animation: animate3 1s;
+}
+@keyframes animate3 {
+	0% {
+		transform: translateY(145px);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
 
 .card .content .details h2 {
-	font-size: 1.25em;
+	font-size: 1.3em;
 	font-weight: 600;
 	color: #45f3ff;
 	line-height: 1.2em;
